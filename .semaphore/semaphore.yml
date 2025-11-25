@@ -10,3 +10,4 @@ blocks:
         - name: 'Job #1'
           commands:
             - checkout
+            - sleep 1
