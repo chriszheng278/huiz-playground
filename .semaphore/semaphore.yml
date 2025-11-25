@@ -2,8 +2,7 @@ version: v1.0
 name: Python
 agent:
   machine:
-    type: f1-standard-2
-    os_image: ubuntu2204
+    type: s1-prod-ubuntu24-04-arm64-00
 blocks:
   - name: Test
     task:
@@ -12,3 +11,4 @@ blocks:
           commands:
             - sem-version python 3.13
             - checkout
+
