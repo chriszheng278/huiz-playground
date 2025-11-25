@@ -1,14 +1,13 @@
 version: v1.0
-name: Python
+name: Initial Pipeline
 agent:
   machine:
-    type: s1-prod-ubuntu24-04-arm64-00
+    type: f1-standard-2
+    os_image: ubuntu2204
 blocks:
-  - name: Test
+  - name: 'Block #1'
     task:
       jobs:
-        - name: pytest
+        - name: 'Job #1'
           commands:
-            - sem-version python 3.13
             - checkout
-
