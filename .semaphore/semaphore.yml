@@ -1,13 +1,12 @@
 version: v1.0
-name: Initial Pipeline
-agent:
+name: Init
   machine:
     type: s1-prod-ubuntu24-04-arm64-1
 blocks:
-  - name: 'Block #1'
+  - name: 'init'
     task:
       jobs:
-        - name: 'Job #1'
+        - name: 'init'
           commands:
             - checkout
-            - sleep 2
+
