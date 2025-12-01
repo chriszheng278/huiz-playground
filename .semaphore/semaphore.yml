@@ -2,8 +2,7 @@ version: v1.0
 name: Initial Pipeline
 agent:
   machine:
-    type: s1-nonprod-ubuntu24-04-arm64-1
-    os_image: ''
+    type: s1-prod-ubuntu24-04-arm64-1
 blocks:
   - name: 'Block #1'
     task:
