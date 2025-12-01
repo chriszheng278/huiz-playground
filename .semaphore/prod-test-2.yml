@@ -1,0 +1,13 @@
+version: v1.0
+name: Prod Test 2
+agent:
+  machine:
+    type: s1-prod-ubuntu24-04-arm64-1
+blocks:
+  - name: 'prod-test-2'
+    task:
+      jobs:
+        - name: 'prod-test-2'
+          commands:
+            - sleep 2
+

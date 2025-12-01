@@ -1,0 +1,13 @@
+version: v1.0
+name: New AMI build
+agent:
+  machine:
+    type: s1-prod-ubuntu24-04-arm64-1
+blocks:
+  - name: 'new-ami-build'
+    task:
+      jobs:
+        - name: 'new-ami-build'
+          commands:
+            - sleep 2
+

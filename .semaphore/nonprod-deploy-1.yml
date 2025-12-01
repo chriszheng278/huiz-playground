@@ -1,0 +1,13 @@
+version: v1.0
+name: Nonprod deploy 1
+agent:
+  machine:
+    type: s1-prod-ubuntu24-04-arm64-1
+blocks:
+  - name: 'nonprod-deploy-1'
+    task:
+      jobs:
+        - name: 'nonprod-deploy-1'
+          commands:
+            - sleep 2
+

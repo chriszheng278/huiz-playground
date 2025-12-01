@@ -1,0 +1,13 @@
+version: v1.0
+name: Nonprod global resources test
+agent:
+  machine:
+    type: s1-prod-ubuntu24-04-arm64-1
+blocks:
+  - name: 'nonprod-global-resources-test'
+    task:
+      jobs:
+        - name: 'nonprod-global-resources-test'
+          commands:
+            - sleep 2
+

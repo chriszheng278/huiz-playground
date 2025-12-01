@@ -1,0 +1,13 @@
+version: v1.0
+name: Prod global resources
+agent:
+  machine:
+    type: s1-prod-ubuntu24-04-arm64-1
+blocks:
+  - name: 'prod-global-resources'
+    task:
+      jobs:
+        - name: 'prod-global-resources'
+          commands:
+            - sleep 2
+
