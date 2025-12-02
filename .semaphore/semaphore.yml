@@ -8,5 +8,5 @@ blocks:
       jobs:
         - name: 'init'
           commands:
-            - checkout
+            - sleep 1
 
