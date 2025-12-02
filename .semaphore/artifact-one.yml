@@ -1,0 +1,12 @@
+version: v1.0
+name: artifact-one
+agent:
+  machine:
+    type: s1-prod-ubuntu24-04-arm64-1
+blocks:
+  - name: 'artifact-one'
+    task:
+      jobs:
+        - name: 'artifact-one'
+          commands:
+            - export ARTIFACT_ONE=artifact_one
