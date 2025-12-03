@@ -1,0 +1,12 @@
+version: v1.0
+name: Nonprod deploy 30
+agent:
+  machine:
+    type: s1-prod-ubuntu24-04-arm64-1
+blocks:
+  - name: 'nonprod-deploy-30'
+    task:
+      jobs:
+        - name: 'nonprod-deploy-30'
+          commands:
+            - sleep 30
